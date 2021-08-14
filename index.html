@@ -8,6 +8,8 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+
+
   <nav id="main-menu">
     <div>
       <div id="hamburguesa">H</div>
@@ -24,32 +26,373 @@
       <div class="avatar"><img src="https://res.cloudinary.com/practicaldev/image/fetch/s--R9qwOwpC--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://thepracticaldev.s3.amazonaws.com/i/78hs31fax49uwy6kbxyw.png"></div>
     </div>
   </nav>
+
   <div id="container">
     <aside id="aside-left">
       Menu
     </aside>
     <main>
-      <nav class="posts-menu">Filtros</nav>
-      <article class="post">
-        
+      <header>
+        <h1> Posts</h1>
+        <nav class="posts-menu">
+           <a  href="#">Feed </a>           
+           <a  href="#">Week </a> 
+           <a  href="#">Month</a>
+           <a  href="#">Year </a>
+           <a  href="#">Infinity</a>   
+           <a  href="#">Latest</a>      
+        </nav>
+        <select name="feed" class="feed">
+            <option value="">Feed </option>
+            <option value="Week">Week</option>
+            <option value="Month">Month</option>
+            <option value="Year">Year</option>
+            <option value="Infinity">Infinity</option>            
+         </select>
+      </header> 
+<!--card 1-->
+      <article class="post">        
+        <div class="card">
+           <div  class="card-prin"> <img src="images/su8cknypn53snlrctwgg.png" alt="img"></div>
+           <div class="container">
+            <div class="infoUser">
+               <div class="avatar"><img src="images/card1.png"></div>
+               <div class="datos">
+                <div class="nombre"><span>Mads Stoumann</span>
+                  <div class="card-user">
+                    <div class="line">   </div>
+                    <div class="card-header">
+                      <div class="avatar"><img src="images/card1.png"></div>
+                      <div class="nombre"><span>Mads Stoumann</span> </div> 
+                    </div>
+                    <div class="follow"><button class="btn-follow"> Follow </button> </div>
+                    <div class="card-body">
+                        <p>Lorem iprehenderit aliquid, iustoiis eveniet. Exercitationem fugiat, nesciunt, veritatis optio quo, cupiditate eaque vitae quisquam nam repellendus atque numquam.</p>
+                    </div>                  
+                </div>
+                </div>
+                <div class="date">Aug 9 (4 days ago)</div>
+              </div>            
+            </div>
+            <div class="title"><span>The Frontend Agency </span> </div>
+            <div class="marks">
+                    <div class="flex-mark"><span> #showdev </span></div> 
+                    <div class="flex-mark"> #webdev</div> 
+                    <div class="flex-mark"> #javascript</div> 
+                    <div class="flex-mark"> #css </div> 
+            </div>
+            <div class="reactions">
+              <div>
+                <div class="heart">
+                  <div ><svg class="crayons-icon" width="24" height="24" xmlns="http://www.w3.org/2000/svg"><path d="M18.884 12.595l.01.011L12 19.5l-6.894-6.894.01-.01A4.875 4.875 0 0112 5.73a4.875 4.875 0 016.884 6.865zM6.431 7.037a3.375 3.375 0 000 4.773L12 17.38l5.569-5.569a3.375 3.375 0 10-4.773-4.773L9.613 10.22l-1.06-1.062 2.371-2.372a3.375 3.375 0 00-4.492.25v.001z"></path></svg>
+                  </div> 
+                  <div > 139 </div>
+                  <div>  <span>reactions</span> </div>
+               </div>
+                <div class="coments">
+                  <div><svg class="crayons-icon" width="24" height="24" xmlns="http://www.w3.org/2000/svg"><path d="M10.5 5h3a6 6 0 110 12v2.625c-3.75-1.5-9-3.75-9-8.625a6 6 0 016-6zM12 15.5h1.5a4.501 4.501 0 001.722-8.657A4.5 4.5 0 0013.5 6.5h-3A4.5 4.5 0 006 11c0 2.707 1.846 4.475 6 6.36V15.5z"></path></svg></div>
+                  <div>         16 </div>
+                  <div>    <span>comments </span></div>
+                </div>
+              </div>
+              <div>
+                <div class="min"> 3 min read</div>
+                <div class="save"><button class="btn-save">Save</button></div>                
+              </div>
+             </div>            
+          </div>
+        </div>        
       </article>
+<!---Card 2-->
       <article class="post">
-        Post
+          <div class="card">
+           <div  class="card-prin"></div>
+           <div class="container">
+            <div class="infoUser">
+               <div class="avatar"><img src="images/card2.png"></div>
+               <div class="datos">
+                <div class="nombre"><span>Parnika-Gupta </span>
+                  <div class="card-user">
+                    <div class="line">   </div>
+                    <div class="card-header">
+                      <div class="avatar"><img src="images/card2.png"></div>
+                      <div class="nombre"><span>Parnika-Gupta </span> </div> 
+                    </div>
+                    <div class="follow"><button class="btn-follow"> Follow </button> </div>
+                    <div class="card-body">
+                        <p>Lorem iprehenderit aliquid, iustoiis eveniet. Exercitationem fugiat, nesciunt, veritatis optio quo, cupiditate eaque vitae quisquam nam repellendus atque numquam.</p>
+                    </div>                  
+                </div>
+                </div>
+                <div class="date">Aug 9 (4 days ago)</div>
+              </div>            
+            </div>
+            <div class="title"> <span>Understand One-way Data Binding in React the easy way!</span> </div>
+            <div class="marks">
+                    <div class="flex-mark"> #javascript </div> 
+                    <div class="flex-mark"> #react</div> 
+                    <div class="flex-mark"> #redux</div> 
+                    <div class="flex-mark"> #webdev </div> 
+            </div>
+            <div class="reactions">
+              <div>
+                <div class="heart">
+                  <div ><svg class="crayons-icon" width="24" height="24" xmlns="http://www.w3.org/2000/svg"><path d="M18.884 12.595l.01.011L12 19.5l-6.894-6.894.01-.01A4.875 4.875 0 0112 5.73a4.875 4.875 0 016.884 6.865zM6.431 7.037a3.375 3.375 0 000 4.773L12 17.38l5.569-5.569a3.375 3.375 0 10-4.773-4.773L9.613 10.22l-1.06-1.062 2.371-2.372a3.375 3.375 0 00-4.492.25v.001z"></path></svg>
+                  </div>
+                  <div >140</div>
+                  <div > <span>reactions</span></div>
+                
+                </div>
+                <div class="coments">
+                  <div><svg class="crayons-icon" width="24" height="24" xmlns="http://www.w3.org/2000/svg"><path d="M10.5 5h3a6 6 0 110 12v2.625c-3.75-1.5-9-3.75-9-8.625a6 6 0 016-6zM12 15.5h1.5a4.501 4.501 0 001.722-8.657A4.5 4.5 0 0013.5 6.5h-3A4.5 4.5 0 006 11c0 2.707 1.846 4.475 6 6.36V15.5z"></path></svg></div>
+                  <div> 22 </div>
+                  <div> <span>comments </span></div>
+                </div>
+              </div>
+              <div>
+                <div class="min"> 3 min read</div>
+                <div class="save"><button class="btn-save">Save</button></div>                
+              </div>
+             </div>            
+          </div>
+        </div>        
+      
       </article>
+<!-- card 3-->
       <article class="post">
-        Post
-      </article>
-      <article class="post">
-        Post
-      </article>
-      <article class="post">
-        Post
-      </article>
+        <div class="card">
+          <div  class="card-prin"></div>
+          <div class="container">
+           <div class="infoUser">
+              <div class="avatar"><img src="images/card3.png"></div>
+              <div class="datos">
+               <div class="nombre"><span>Eugene Kopich</span>
+                <div class="card-user">
+                  <div class="line">   </div>
+                  <div class="card-header">
+                    <div class="avatar"><img src="images/card3.png"></div>
+                    <div class="nombre"><span>Eugene Kopich </span> </div> 
+                  </div>
+                  <div class="follow"><button class="btn-follow"> Follow </button> </div>
+                  <div class="card-body">
+                      <p>Lorem iprehenderit aliquid, iustoiis eveniet. Exercitationem fugiat, nesciunt, veritatis optio quo, cupiditate eaque vitae quisquam nam repellendus atque numquam.</p>
+                  </div>                  
+              </div>
 
+               </div>
+               <div class="date">Aug 10 (4 days ago)</div>
+             </div>            
+           </div>
+           <div class="title"><span>Vue 3.2 Released!</span> </div>
+           <div class="marks">
+                   <div class="flex-mark"> #vue</div> 
+                   <div class="flex-mark"> #javascript</div> 
+                   <div class="flex-mark"> #frontend</div> 
+                   <div class="flex-mark"> #webdev </div> 
+           </div>
+           <div class="reactions">
+             <div>
+               <div class="heart">
+                 <div><svg class="crayons-icon" width="24" height="24" xmlns="http://www.w3.org/2000/svg"><path d="M18.884 12.595l.01.011L12 19.5l-6.894-6.894.01-.01A4.875 4.875 0 0112 5.73a4.875 4.875 0 016.884 6.865zM6.431 7.037a3.375 3.375 0 000 4.773L12 17.38l5.569-5.569a3.375 3.375 0 10-4.773-4.773L9.613 10.22l-1.06-1.062 2.371-2.372a3.375 3.375 0 00-4.492.25v.001z"></path></svg></div>
+                 <div >207</div>
+                 <div ><span>reactions</span></div>                              
+                </div>
+               <div class="coments">
+                 <div> <svg class="crayons-icon" width="24" height="24" xmlns="http://www.w3.org/2000/svg"><path d="M10.5 5h3a6 6 0 110 12v2.625c-3.75-1.5-9-3.75-9-8.625a6 6 0 016-6zM12 15.5h1.5a4.501 4.501 0 001.722-8.657A4.5 4.5 0 0013.5 6.5h-3A4.5 4.5 0 006 11c0 2.707 1.846 4.475 6 6.36V15.5z"></path></svg></div>
+                 <div>          21  </div>
+                 <div>  <span>comments </span> </div>      
+               </div>
+             </div>
+             <div>
+               <div class="min"> 6 min read</div>
+               <div class="save"><button class="btn-save">Save</button></div>                
+             </div>
+            </div>
+
+          <!-- pendiente  
+            <div class="comm-ents">
+              <div class="avatar-coment">
+               <div class="info">
+                <div class="avatar"><img src="images/card3-1.png"></div>
+                <div class="date">Aug 10 (4 days ago)</div>
+               </div>
+              <div class="coment">
+                
+                <p>Love Vue, grateful for smarter people who support and contribute to it, but I'm seeing more "stuff" working its way in as time goes on. More is sometimes worse and it doesn't always make the thing more relevant. Although Vue technically cannot get as bad as React, which is reassuring, it does seem to be moving in that direction. Obscure magic like <span >script setup</span> does nothing for me. Imo there's rapidly diminishing returns from the new stuff and it's diluting the original investment.</p>
+
+                <p>Please don't feel pressured to cram in more stuff. I don't speak for the community, but I know a lot of folks ditched React for Vue because Vue's DX is was much cleaner. There was less thinking about the framework and more time for building the product. Less proprietary and more standards.</p>
+                
+                 <p>I'd love to have the same Vue experience but with no runtime like Svelte, so perhaps that could be something to look in to. Or at least get it down below 10kb like Riot (shrink the router too). Or the removal of special template syntax (v-on:click= and @click= vs. standard onclick= like Riot does) to further align with HTML, or ditch the Handlebars style {{ }} in favor of ${ } to align with template literals.</p> 
+              </div>
+              
+              <div class="vistos"> <button> See all 21 comments</button></div>
+
+            </div>            
+         </div>
+        -->
+       </div>        
+      </article>
+<!-- card 4-->
+      <article class="post">
+        <div class="card">
+          <div  class="card-prin"></div>
+          <div class="container">
+           <div class="infoUser">
+              <div class="avatar"><img src="images/card4.png"></div>
+              <div class="datos">
+               <div class="nombre"><span>Temani Afif</span>
+                <div class="card-user">
+                  <div class="line">   </div>
+                  <div class="card-header">
+                    <div class="avatar"><img src="images/card4.png"></div>
+                    <div class="nombre"><span>Temani Afif </span> </div> 
+                  </div>
+                  <div class="follow"><button class="btn-follow"> Follow </button> </div>
+                  <div class="card-body">
+                      <p>Lorem iprehenderit aliquid, iustoiis eveniet. Exercitationem fugiat, nesciunt, veritatis optio quo, cupiditate eaque vitae quisquam nam repellendus atque numquam.</p>
+                  </div>                  
+              </div>
+               </div>
+               <div class="date">Aug 9 (4 days ago)</div>
+             </div>            
+           </div>
+           <div class="title"><span>Adding 100 underline/overlay animations | The impressive CSS collection ⭐️<span></span> </div>
+           <div class="marks">
+                   <div class="flex-mark"><span> #showdev </span></div> 
+                   <div class="flex-mark"> #css</div> 
+                   <div class="flex-mark"> #webdev</div> 
+                   <div class="flex-mark"> #codepen </div> 
+           </div>
+           <div class="reactions">
+             <div>
+               <div class="heart">                 
+                <div> <svg class="crayons-icon" width="24" height="24" xmlns="http://www.w3.org/2000/svg"><path d="M18.884 12.595l.01.011L12 19.5l-6.894-6.894.01-.01A4.875 4.875 0 0112 5.73a4.875 4.875 0 016.884 6.865zM6.431 7.037a3.375 3.375 0 000 4.773L12 17.38l5.569-5.569a3.375 3.375 0 10-4.773-4.773L9.613 10.22l-1.06-1.062 2.371-2.372a3.375 3.375 0 00-4.492.25v.001z"></path></svg></div>
+                <div> 570 </div>
+                <div>  <span>reactions</span></div>
+              </div>
+               <div class="coments">
+                 <div> <svg class="crayons-icon" width="24" height="24" xmlns="http://www.w3.org/2000/svg"><path d="M10.5 5h3a6 6 0 110 12v2.625c-3.75-1.5-9-3.75-9-8.625a6 6 0 016-6zM12 15.5h1.5a4.501 4.501 0 001.722-8.657A4.5 4.5 0 0013.5 6.5h-3A4.5 4.5 0 006 11c0 2.707 1.846 4.475 6 6.36V15.5z"></path></svg></div>
+                 <div> 29 </div> 
+                 <div> <span>comments</span></div>
+               </div>
+             </div>
+             <div>
+               <div class="min"> 3 min read</div>
+               <div class="save"><button class="btn-save">Save</button></div>                
+             </div>
+            </div>            
+         </div>
+       </div>
+       </article>
+<!-- card 5-->      
+      <article class="post">
+        <div class="card">
+          <div  class="card-prin"> <img src="images/cab2.png" alt="img"></div>
+          <div class="container">
+           <div class="infoUser">
+              <div class="avatar"><img src="images/card5.png"></div>
+              <div class="datos">
+               <div class="nombre"><span>Waylon Walker</span>
+                <div class="card-user">
+                  <div class="line">   </div>
+                  <div class="card-header">
+                    <div class="avatar"><img src="images/card5.png"></div>
+                    <div class="nombre"><span>Waylon Walker</span> </div> 
+                  </div>
+                  <div class="follow"><button class="btn-follow"> Follow </button> </div>
+                  <div class="card-body">
+                      <p>Lorem iprehenderit aliquid, iustoiis eveniet. Exercitationem fugiat, nesciunt, veritatis optio quo, cupiditate eaque vitae quisquam nam repellendus atque numquam.</p>
+                  </div>                  
+              </div>
+
+               </div>
+               <div class="date">Aug 14 (31 mins ago)</div>
+             </div>            
+           </div>
+           <div class="title"><span> 🔪 killing tmux </span></s> </div>
+           <div class="marks">
+                   <div class="flex-mark"> #cli</div> 
+                   <div class="flex-mark"> #linux</div> 
+                   <div class="flex-mark"> #tmux </div> 
+           </div>
+           <div class="reactions">
+             <div>
+               <div class="heart">
+                 <div><svg class="crayons-icon" width="24" height="24" xmlns="http://www.w3.org/2000/svg"><path d="M18.884 12.595l.01.011L12 19.5l-6.894-6.894.01-.01A4.875 4.875 0 0112 5.73a4.875 4.875 0 016.884 6.865zM6.431 7.037a3.375 3.375 0 000 4.773L12 17.38l5.569-5.569a3.375 3.375 0 10-4.773-4.773L9.613 10.22l-1.06-1.062 2.371-2.372a3.375 3.375 0 00-4.492.25v.001z"></path></svg></div>
+                 <div> 1 </div>
+                 <div><span>reactions</span></div>
+               </div>
+               <div class="coments">
+                 <div> <svg class="crayons-icon" width="24" height="24" xmlns="http://www.w3.org/2000/svg"><path d="M10.5 5h3a6 6 0 110 12v2.625c-3.75-1.5-9-3.75-9-8.625a6 6 0 016-6zM12 15.5h1.5a4.501 4.501 0 001.722-8.657A4.5 4.5 0 0013.5 6.5h-3A4.5 4.5 0 006 11c0 2.707 1.846 4.475 6 6.36V15.5z"></path></svg></div>
+                 <div>     </div>
+                 <div> <span >   Add comment </span>  </div>
+               </div>
+             </div>
+             <div>
+               <div class="min"> 2 min read</div>
+               <div class="save"><button class="btn-save">Save</button></div>                
+             </div>
+            </div>            
+         </div>
+       </div> 
+      </article>
+    <!-- card 6 -->  
+    <article class="post">
+      <div class="card">
+        <!--<div  class="card-prin"> <img src="" alt="img"></div>-->
+        <div class="container">
+         <div class="infoUser">
+            <div class="avatar"><img src="images/card6.png"></div>
+            <div class="datos">
+             <div class="nombre"><span>Jaydeep Dave</span>
+              <div class="card-user">
+                <div class="line">   </div>
+                <div class="card-header">
+                  <div class="avatar"><img src="images/card6.png"></div>
+                  <div class="nombre"><span>Jaydeep Dave</span> </div> 
+                </div>
+                <div class="follow"><button class="btn-follow"> Follow </button> </div>
+                <div class="card-body">
+                    <p>Lorem iprehenderit aliquid, iustoiis eveniet. Exercitationem fugiat, nesciunt, veritatis optio quo, cupiditate eaque vitae quisquam nam repellendus atque numquam.</p>
+                </div>                  
+            </div>   
+            </div>
+             <div class="date">Aug 14 (4 hours ago)</div>
+           </div>            
+         </div>
+         <div class="title"><span> My Interview Experience at Media.net</span> </div>
+         <div class="marks">
+                 <div class="flex-mark"> #career </div> 
+                 <div class="flex-mark"> #interview</div> 
+                 <div class="flex-mark"> #beginners</div> 
+                 <div class="flex-mark"> #webdev </div> 
+         </div>
+         <div class="reactions">
+           <div>
+             <div class="heart">
+               <div><svg class="crayons-icon" width="24" height="24" xmlns="http://www.w3.org/2000/svg"><path d="M18.884 12.595l.01.011L12 19.5l-6.894-6.894.01-.01A4.875 4.875 0 0112 5.73a4.875 4.875 0 016.884 6.865zM6.431 7.037a3.375 3.375 0 000 4.773L12 17.38l5.569-5.569a3.375 3.375 0 10-4.773-4.773L9.613 10.22l-1.06-1.062 2.371-2.372a3.375 3.375 0 00-4.492.25v.001z"></path></svg></div>
+               <div>3 </div>
+               <div><span>reactions</span></div>
+              </div>
+             <div class="coments">
+               <div> <svg class="crayons-icon" width="24" height="24" xmlns="http://www.w3.org/2000/svg"><path d="M10.5 5h3a6 6 0 110 12v2.625c-3.75-1.5-9-3.75-9-8.625a6 6 0 016-6zM12 15.5h1.5a4.501 4.501 0 001.722-8.657A4.5 4.5 0 0013.5 6.5h-3A4.5 4.5 0 006 11c0 2.707 1.846 4.475 6 6.36V15.5z"></path></svg></div>
+               <div>         16   </div>
+               <div> <span> comments </span> </div>
+             </div>
+           </div>
+           <div>
+             <div class="min"> 3 min read</div>
+             <div class="save"><button class="btn-save">Save</button></div>                
+           </div>
+          </div>            
+       </div>
+     </div> 
+    </article>
     </main>
     <aside id="aside-right">
       Listings
     </aside>
   </div>
+
 </body>
 </html>

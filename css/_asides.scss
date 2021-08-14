@@ -1,11 +1,22 @@
 aside {
   display: none;
 }
-
-@media (min-width: 900px){
-  aside {
+@media (min-width: 768px){
+  #aside-left {
     display: block;
     align-items: flex-start;
+    @include center-item();
+    width: 235px;
+    min-width: 235px;
+    background-color: #FFF;
+    border: 1px solid lightgray;
+  }
+
+}
+
+@media (min-width: 1024px){
+/*  aside {
+    
     @include center-item();
   }
 
@@ -15,12 +26,18 @@ aside {
     min-width: 235px;
     background-color: #FFF;
     border: 1px solid lightgray;
-  }
+  }*/
+
   #aside-right {
+    display: block;
+    align-items: flex-start;
     @include center-item();
     width: 320px;
     min-width: 320px;
     background-color: #FFF;
     border: 1px solid lightgray;
   }
+
+ 
+ 
 }

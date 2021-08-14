@@ -2,23 +2,12 @@ aside {
   display: none;
 }
 
-@media (min-width: 900px) {
-  aside {
+@media (min-width: 768px) {
+  #aside-left {
     display: block;
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: flex-start;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
-  #aside-left {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -33,7 +22,26 @@ aside {
     background-color: #FFF;
     border: 1px solid lightgray;
   }
+}
+
+@media (min-width: 1024px) {
+  /*  aside {
+    
+    @include center-item();
+  }
+
+  #aside-left {
+    @include center-item();
+    width: 235px;
+    min-width: 235px;
+    background-color: #FFF;
+    border: 1px solid lightgray;
+  }*/
   #aside-right {
+    display: block;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -50,6 +58,75 @@ aside {
   }
 }
 
+main {
+  width: 650px;
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 8px 12px;
+}
+
+header .posts-menu {
+  display: none;
+}
+
+header h1 {
+  font-size: 18px;
+  color: #202428;
+}
+
+header .feed {
+  color: #08090A;
+  background-color: #f9fafa;
+  font-size: 16px;
+  width: 100px;
+  height: 40px;
+  margin: 0px 0px 0px 8px;
+  padding: 7px 32px 7px 8px;
+  border-radius: 6px;
+}
+
+@media (min-width: 640px) {
+  header .posts-menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    font-size: 16px;
+  }
+  header .posts-menu > a {
+    padding: 10px 5px 10px 5px;
+    margin-left: 5px;
+    margin-right: 5px;
+    text-decoration: none;
+    color: #08090A;
+  }
+  header .posts-menu > a:hover {
+    border: 0;
+    background-color: #c2cedd;
+    border-radius: 10px;
+    color: #3b49df;
+  }
+  header .feed {
+    display: none;
+  }
+}
+
 .post {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -60,11 +137,278 @@ aside {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin: 5px;
   background-color: #FFF;
   border: 1px solid lightgray;
-  min-height: 300px;
   border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.card {
+  width: 100%;
+}
+
+.card .card-prin img {
+  width: 100%;
+}
+
+.infoUser {
+  margin-top: 10px;
+  padding-left: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.infoUser .avatar img {
+  width: 45px;
+}
+
+.datos {
+  padding-left: 5px;
+}
+
+.datos .nombre {
+  font-weight: bold;
+  font-size: 14px;
+  color: #4D5760;
+}
+
+.datos .date {
+  font-size: 12px;
+  color: #64707D;
+}
+
+.title {
+  padding-left: 10px;
+  font-weight: bold;
+  font-size: 20px;
+  color: #08090A;
+}
+
+.marks {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  margin: 8px;
+  padding-left: 4px;
+}
+
+.marks .flex-mark {
+  margin-right: 5px;
+  font-size: 14px;
+  color: #64707D;
+}
+
+.marks .flex-mark span {
+  border-radius: 5px;
+  padding: 4px;
+  background-color: #091B47;
+  color: #B2FFE1;
+}
+
+.reactions {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 8px;
+}
+
+.reactions > div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.reactions > div .heart {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 4px 12px 4px 8px;
+}
+
+.reactions > div .heart > div {
+  margin-right: 2px;
+}
+
+.reactions > div .heart > div span {
+  display: none;
+}
+
+.reactions > div .coments {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.reactions > div .coments > div {
+  margin-right: 2px;
+}
+
+.reactions > div .coments > div span {
+  display: none;
+}
+
+.reactions > div .min {
+  font-size: 11.2px;
+  color: #64707D;
+  margin-right: 10px;
+}
+
+.reactions > div .save .btn-save {
+  padding: 4px 12px;
+  background-color: gainsboro;
+  color: #363D44;
+  font-size: 14px;
+  border-radius: 5px;
+  border: none;
+  margin-right: 10px;
+}
+
+.comm-ents {
+  background-color: #eef0f1;
+  border-radius: 10px;
+  margin: 0px 10px 0px 10px;
+  width: 95%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.comm-ents .avatar {
+  padding-left: 10px;
+}
+
+.comm-ents .avatar img {
+  width: 25px;
+}
+
+.comm-ents .info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.comm-ents .info .date {
+  margin-left: 5px;
+  font-size: 12px;
+  color: #64707D;
+}
+
+@media (min-width: 900px) {
+  .datos {
+    padding-left: 5px;
+  }
+  .datos .nombre:hover {
+    background-color: #eef0f1;
+    border: none;
+    border-radius: 2px;
+  }
+  .datos .nombre:hover .card-user {
+    display: block;
+  }
+  .datos .card-user {
+    position: absolute;
+    background-color: white;
+    width: 250px;
+    height: 300px;
+    border-radius: 5px;
+    border-color: #3440c4;
+    border-style: solid;
+  }
+  .datos .card-user .line {
+    background-color: #3440c4;
+    height: 30px;
+  }
+  .datos .card-user .card-header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    justify-items: flex-end;
+  }
+  .datos .card-user .follow .btn-follow {
+    background-color: #3440c4;
+    Color: white;
+    border-radius: 5px;
+    border: none;
+    width: 180px;
+    height: 40px;
+    margin-left: 25px;
+    font-weight: 500px;
+    text-align: center;
+  }
+  .datos .date {
+    margin-top: 10px;
+  }
+  .datos .date:hover {
+    color: gainsboro;
+  }
+  .title {
+    font-size: 30px;
+    padding-left: 50px;
+  }
+  .title span:hover {
+    color: #3b49df;
+  }
+  .marks {
+    padding-left: 50px;
+  }
+  .marks .flex-mark:hover {
+    color: #eef0f1;
+  }
+  .reactions {
+    padding-left: 50px;
+  }
+  .reactions > div .heart:hover {
+    background-color: #eef0f1;
+    border: none;
+    border-radius: 5px;
+  }
+  .reactions > div .heart > div span {
+    display: block;
+  }
+  .reactions > div .coments:hover {
+    background-color: #eef0f1;
+    border: none;
+    border-radius: 5px;
+  }
+  .reactions > div .coments > div span {
+    display: block;
+  }
+  .reactions > div .save .btn-save:hover {
+    background-color: #eef0f1;
+  }
 }
 
 body {
@@ -108,7 +452,12 @@ body {
   border-radius: 50%;
 }
 
+.card-user {
+  display: none;
+}
+
 #container {
+  cursor: pointer;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -119,23 +468,8 @@ body {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
-}
-
-main {
-  width: 100%;
-}
-
-main .posts-menu {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  height: 50px;
-  border: 1px solid black;
 }
 /*# sourceMappingURL=style.css.map */
