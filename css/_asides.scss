@@ -16,11 +16,13 @@ aside {
     background-color: #FFF;
     border: 1px solid lightgray;
   }
-  #aside-right {
+
+ /* #aside-right {
     @include center-item();
     width: 320px;
     min-width: 320px;
     background-color: #FFF;
     border: 1px solid lightgray;
-  }
+}*/
+
 }
